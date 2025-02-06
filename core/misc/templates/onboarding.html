@@ -1,0 +1,28 @@
+{% extends "base_email.html" %}
+
+{% load static %}
+
+{% block content %}
+    <div class="content">
+    <p>Olá {{ user.name }},</p>
+    
+    <p>Seja bem-vindo(a)! Estamos muito felizes em tê-lo(a) conosco. Para garantir que sua experiência seja incrível, preparamos alguns passos iniciais para você:</p>
+    
+    <ul class="checklist">
+        <li>Acesse sua conta: [Link para login]</li>
+        <li>Explore nossos recursos: [Link para um guia ou tutorial]</li>
+        <li>Entre em contato: Nossa equipe está pronta para ajudar! Responda este e-mail ou fale conosco pelo [Canal de suporte].</li>
+    </ul>
+    
+    <p>Se precisar de qualquer coisa, estamos aqui para ajudar.</p>
+    <p>🎉 Vamos juntos construir algo incrível!</p>
+    
+    <p>Atenciosamente,<br>
+    Equipe João Soares</p>
+    
+    <center>
+        <a href="#" class="button">ACESSAR</a>
+    </center>
+    </div>
+{% endblock %}
+
