@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 from config import secrets
 from pathlib import Path
-from sentry import SentryConfig
+from config.sentry import SentryConfig
 
 SentryConfig().config()
 
