@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 from config import secrets
 from pathlib import Path
-from sentry import SentryConfig
+from config.sentry import SentryConfig
 
 SentryConfig().config()
 
@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     'apps.user',
-    'apps.employees',
     # Automatically add all apps in the apps folder,
     # the apps will be added above this comment
     
@@ -97,7 +96,7 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '0.0.1',
 }
 
-CELERY_BROKER_URL = 'amqp://guest:guest@rabbitmq:5672//'
+CELERY_BROKER_URL = 'amqp://guest:guest@app-rabbitmq:5672//'
 CELERY_RESULT_BACKEND = 'django-db'
 
 WSGI_APPLICATION = 'config.wsgi.application'
