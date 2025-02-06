@@ -18,6 +18,3 @@ def main():
     except subprocess.CalledProcessError as e:
         print(f"Erro ao executar o comando: {e}", file=sys.stderr)
         sys.exit(1)
-
-if __name__ == "__main__":
-    main()

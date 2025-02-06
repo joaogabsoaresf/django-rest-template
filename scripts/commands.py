@@ -2,6 +2,7 @@ import os
 import inspect
 import argparse
 from app_manager import AppManager
+from init import main
 
 class Commands:
     
@@ -19,6 +20,10 @@ class Commands:
     @classmethod
     def create_local_superuser(cls):
         os.system("python core/manage.py createsuperuser --username admin --email admim@joaosoares.dev")
+    
+    @classmethod
+    def init_config(cls):
+        main()
 
 
 if __name__ == "__main__":

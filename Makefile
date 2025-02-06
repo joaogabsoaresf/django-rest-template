@@ -18,3 +18,6 @@ run-config:
 	make db-update
 	python scripts/commands.py create_local_superuser
 	make run
+
+init-config:
+	python scripts/commands.py init_config
