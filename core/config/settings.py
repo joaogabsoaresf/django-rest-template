@@ -96,7 +96,7 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '0.0.1',
 }
 
-CELERY_BROKER_URL = 'amqp://guest:guest@rabbitmq:5672//'
+CELERY_BROKER_URL = 'amqp://guest:guest@app-rabbitmq:5672//'
 CELERY_RESULT_BACKEND = 'django-db'
 
 WSGI_APPLICATION = 'config.wsgi.application'
