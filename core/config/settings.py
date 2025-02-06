@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     'apps.user',
-    'apps.employees',
     # Automatically add all apps in the apps folder,
     # the apps will be added above this comment
     
